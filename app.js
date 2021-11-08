@@ -17,22 +17,20 @@ app.use(require('./router/regi'));
 app.use(require('./router/Au'));
 
 const port = process.env.PORT;
-// how to
 
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World! From OpenLiteSpeed NodeJS\n');
-// });
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World! From OpenLiteSpeed NodeJS\n');
+});
 
-// app.use(express.static("Public"));
-// const path = require("path");
-// app.get("*", (req, res) => {
+app.use(express.static("Public"));
+const path = require("path");
+app.get("*", (req, res) => {
 
-//         res.sendFile(path.resolve(__dirname, 'Public', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'Public', 'index.html'));
 
-//     })
-// // how
+    })
 app.listen(port, ()=>{
     console.log(`server running port ${port}`);
 });
