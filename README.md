@@ -8,19 +8,18 @@
 Use the npm package manager [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install iclub.
 
 ```bash
-cd client
-npm install
-cd ..
-cd server 
-npm install
+sudo apt install npm
 ```
-
-## Start react Dev Environment
+cheak npm version
+```bash
+npm -v
+node -v
+```
 
 ```bash
-cd client 
-npm start
+npm install
 ```
+
 ## Start Nodejs Dev Environment 
 
 ```bash
