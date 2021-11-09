@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 ./config.env
+=======
+./node_modules/
+./package-lock.json
+./config.env
+>>>>>>> 421d371d4d3ea3a54dc8b790e6e7c61eb7b1f269
